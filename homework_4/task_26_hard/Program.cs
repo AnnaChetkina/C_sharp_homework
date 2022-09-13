@@ -17,11 +17,11 @@ string GetDigitsCount(double n) {
 int RemoveSeparator(double n){
     string str = n.ToString();
     str = str.Replace(",", "");
-    str = str.Replace(".", "");
     int res = Convert.ToInt32(str);    
     return res;
 }
 
-Console.WriteLine(GetDigitsCount(456));
+Console.WriteLine(GetDigitsCount(456.0));
 Console.WriteLine(GetDigitsCount(0.78));
 Console.WriteLine(GetDigitsCount(89.126));
+
