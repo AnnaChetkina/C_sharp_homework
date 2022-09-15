@@ -2,15 +2,12 @@
 // Найдите максимальный элемент и его индекс, минимальный элемент и его индекс, среднее арифметическое всех элементов. 
 // Сохранить эту инфу в отдельный массив и вывести на экран с пояснениями.
 // Найти медианное значение , возможно придется кое-что для этого дополнительно выполнить.
-
-int[] FillArray(int size)
-{
+int[] FillArray(int size) {
     int[] array = new int[size];
     for (int i = 0; i < size; i++) array[i] = new Random().Next(1, 100);
     return array;
 }
-
-void FindAll2(int[] array){
+void FindSomeValues(int[] array){
     double[] result = new double[5]; 
     result[0] = array[0]; // max
     result[1] = 0; // maxInd
@@ -26,22 +23,12 @@ void FindAll2(int[] array){
             result[2] = array[i];
             result[3] = i;
         }
-        result[4] += array[i]; // todo ?
-        // System.Console.WriteLine("avg =" + result[4]);
+        result[4] += array[i]; 
     }
     result[4] = result[4]/array.Length;
-    Console.WriteLine($"max = {result[0]}, maxInd = {result[1]}, min = {result[2]}, minInd = {result[3]}, avg = {result[4]}");
-}
-
-double FindMedian(int[] array) {
-    double median;
-    SelectionSortMin(array);
-    Console.WriteLine($"Отсортированный массив [{String.Join(", ", array)}]");
-    if (array.Length % 2 == 1) median = array[array.Length/2];  
-    else median = (array[array.Length/2 - 1] + array[array.Length/2]) / 2;
-    System.Console.WriteLine($"{array[array.Length/2 - 1]} , {array[array.Length/2]} ");
-    // System.Console.WriteLine("median = " + median);
-    return median;
+    Console.WriteLine($"Максимальный элемент = {result[0]}, его индекс = {result[1]},");
+    Console.WriteLine($"минимальный элемент = {result[2]}, его индекс  = {result[3]},");
+    Console.WriteLine($"среднее арифметическое всех элементов = {result[4]}");
 }
 
 void SelectionSortMin(int[] array){
@@ -56,14 +43,23 @@ void SelectionSortMin(int[] array){
     }
 }
 
-int[] array = FillArray(10);
-Console.WriteLine($"Сгенерированный массив [{String.Join(", ", array)}]");
-FindAll2(array);
-// FindMedian(array);
-Console.WriteLine($" Median = {FindMedian(array)}");
+double FindMedian(int[] array) {
+    double median;
+    SelectionSortMin(array);
+    Console.WriteLine($"Отсортированный массив [{String.Join(", ", array)}]");
+    // если длина массива не четная, то медиана равна среднему элементу
+    if (array.Length % 2 == 1) median = array[array.Length/2]; 
+    // если длина массива четная, то медиана равна сумме двух средних элементов, деленных пополам
+    else median = (array[array.Length/2 - 1] + array[array.Length/2]) / 2.0; 
+    return median;
+}
 
-// int[] array1 = FillArray(9);
-// Console.WriteLine($"Сгенерированный массив [{String.Join(", ", array1)}]");
-// FindAll2(array1);
-// FindMedian(array1);
-// Console.WriteLine($"Median = {FindMedian(array1)}");
+int[] array = FillArray(10); // длина массива четная
+Console.WriteLine($"Сгенерированный массив [{String.Join(", ", array)}]");
+FindSomeValues(array);
+Console.WriteLine($"Медианное значение = {FindMedian(array)}");
+
+int[] array1 = FillArray(7); // длина массива не четная
+Console.WriteLine($"Сгенерированный массив [{String.Join(", ", array1)}]");
+FindSomeValues(array1);
+Console.WriteLine($"Медианное значение = {FindMedian(array1)}");

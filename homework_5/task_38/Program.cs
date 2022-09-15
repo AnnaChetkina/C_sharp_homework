@@ -10,18 +10,8 @@ double[] FillArray(int size)
     return array;
 }
 
-void PrintArray(double[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (i != array.Length - 1) Console.Write($"{array[i]} ");
-        else Console.WriteLine($"{array[i]}");
-    }
-}
-
 double[] aRandom = FillArray(10);
 Console.WriteLine($"Сгенерированный массив [{String.Join("; ", aRandom)}]");
-// PrintArray(aRandom);
 
 double GetDiff(double[] aDoubles){
     double diff = 0;
@@ -40,4 +30,4 @@ double GetDiff(double[] aDoubles){
     diff = max - min;
     return Math.Round(diff, 2);
 }
-System.Console.WriteLine("Разница между максимальным и минимальным элементами массива = " + GetDiff(aRandom));
+Console.WriteLine("Разница между максимальным и минимальным элементами массива = " + GetDiff(aRandom));
