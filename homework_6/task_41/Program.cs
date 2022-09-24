@@ -17,4 +17,4 @@ int CountPositiveDigits(){
     return count;
 }
 
-Console.WriteLine(CountPositiveDigits());
+Console.WriteLine($"Пользователь ввел чисел больше 0: {CountPositiveDigits()}");

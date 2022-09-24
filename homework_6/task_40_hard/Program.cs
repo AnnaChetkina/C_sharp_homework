@@ -1,5 +1,5 @@
 ﻿// задача 40 - HARD необязательная. На вход программы подаются три целых положительных числа. Определить, является ли это сторонами треугольника. 
-// Если да, то вывести всю информацию по нему - + площадь, +периметр, +значения углов треугольника в градусах, является ли он прямоугольным, равнобедренным, равносторонним.
+// Если да, то вывести всю информацию по нему - площадь, периметр, значения углов треугольника в градусах, является ли он прямоугольным, равнобедренным, равносторонним.
 
 void CheckTriangle(int a, int b, int c) {
     if (a < (b + c) & b < (a + c) & c < (a + b)) {
@@ -8,14 +8,13 @@ void CheckTriangle(int a, int b, int c) {
     }
     else System.Console.WriteLine($"Треугольник со сторонами {a}, {b}, {c} не существует");
 }
-
 void GetTriangleInfo(int a, int b, int c) {
     double p = a + b + c; // периметр
     double sqr = Math.Round(Math.Sqrt((p/2) * (p/2 - a) * (p/2 - b) * (p/2 - c)), 3);
     double alfa = GetAngle(a, b, c, "alfa"); 
     double beta = GetAngle(a, b, c, "beta"); 
     double gamma = Math.Round(180 - alfa - beta, 2);
-    System.Console.WriteLine($"p = {p}, sqr = {sqr}, угол Альфа = {alfa} градусов, угол Бета = {beta} градусов, угол Гамма = {gamma} градусов");
+    System.Console.WriteLine($"Петиметр = {p}, Площадь = {sqr}, угол Альфа = {alfa} градусов, угол Бета = {beta} градусов, угол Гамма = {gamma} градусов");
 
     if (a == b & a == c) System.Console.WriteLine("Треугольник равносторонний");
     else System.Console.WriteLine("Треугольник не равносторонний");
@@ -26,9 +25,7 @@ void GetTriangleInfo(int a, int b, int c) {
     if (alfa == 90 || beta == 90 || gamma == 90) System.Console.WriteLine("Треугольник прямоугольный");
     else System.Console.WriteLine("Треугольник не прямоугольный");
 }
-
 double GetAngle(int a, int b, int c, string angle) {
-    double res;
     double cos;
      switch (angle)
     {
