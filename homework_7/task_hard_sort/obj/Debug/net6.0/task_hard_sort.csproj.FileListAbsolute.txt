@@ -1,0 +1,15 @@
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\bin\Debug\net6.0\task_hard_sort.exe
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\bin\Debug\net6.0\task_hard_sort.deps.json
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\bin\Debug\net6.0\task_hard_sort.runtimeconfig.json
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\bin\Debug\net6.0\task_hard_sort.dll
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\bin\Debug\net6.0\task_hard_sort.pdb
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\task_hard_sort.csproj.AssemblyReference.cache
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\task_hard_sort.GeneratedMSBuildEditorConfig.editorconfig
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\task_hard_sort.AssemblyInfoInputs.cache
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\task_hard_sort.AssemblyInfo.cs
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\task_hard_sort.csproj.CoreCompileInputs.cache
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\task_hard_sort.dll
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\refint\task_hard_sort.dll
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\task_hard_sort.pdb
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\task_hard_sort.genruntimeconfig.cache
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_7\task_hard_sort\obj\Debug\net6.0\ref\task_hard_sort.dll
