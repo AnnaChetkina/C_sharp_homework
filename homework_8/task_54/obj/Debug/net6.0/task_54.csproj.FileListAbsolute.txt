@@ -1,0 +1,15 @@
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\bin\Debug\net6.0\task_54.exe
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\bin\Debug\net6.0\task_54.deps.json
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\bin\Debug\net6.0\task_54.runtimeconfig.json
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\bin\Debug\net6.0\task_54.dll
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\bin\Debug\net6.0\task_54.pdb
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\task_54.csproj.AssemblyReference.cache
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\task_54.GeneratedMSBuildEditorConfig.editorconfig
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\task_54.AssemblyInfoInputs.cache
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\task_54.AssemblyInfo.cs
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\task_54.csproj.CoreCompileInputs.cache
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\task_54.dll
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\refint\task_54.dll
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\task_54.pdb
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\task_54.genruntimeconfig.cache
+C:\GeekBrains 22\intro_to_programming_C_Sharp\seminars\homework\homework_8\task_54\obj\Debug\net6.0\ref\task_54.dll
