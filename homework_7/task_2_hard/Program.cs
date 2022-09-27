@@ -5,31 +5,51 @@
 // (возможно для этого удобно будет использование множества) и выполнить это за m*n / 2 итераций. 
 // То есть если массив три на четыре, то надо выполнить не более 6 итераций. И далее в конце опять вывести на экран как таблицу.
 
-void RandomArray(){
+int[,] RandomArray(){
     
-    Random rnd = new Random();
-    int[] arr = new int[8];
-    int val = 1;
-    for (int k = 0; k < arr.Length; k++) arr[k] = val++;
+    int[,] arr = new int[,] 
+    {
+        {1, 2, 3, 4, 1, 2, 3, 4},
+        {1, 2, 3, 4, 1, 2, 3, 4},
+        {1, 2, 3, 4, 1, 2, 3, 4}
+    };
+    // int[] arr = new int[8];
+    // int val = 1;
+    // for (int k = 0; k < arr.Length; k++) arr[k] = val++;
    
-    for (int i = 0; i < arr.Length; i++)
+    // for (int i = 0; i < arr.Length; i++)
+    // {
+    //     System.Console.Write($"{arr[i]} ");
+    // }
+    // System.Console.WriteLine();
+    Random rnd = new Random();
+    for (int i = 0; i < arr.GetLength(0)/2; i++)
     {
-        System.Console.Write($"{arr[i]} ");
+        // System.Console.WriteLine($"{i} ");
+        int k = rnd.Next(arr.GetLength(0)/2, arr.GetLength(0));
+        // System.Console.WriteLine($"{k} ");
+        for (int j = 0; j < arr.GetLength(1); j++)
+        (arr[i, j], arr[k, j]) = (arr[k, j], arr[i, j]);
     }
-    System.Console.WriteLine();
-
-    for (int i = 0; i < arr.Length/2; i++)
+    // for (int i = 0; i < arr.Length; i++)
+    // {
+    //     System.Console.Write($"{arr[i]} ");
+    // }
+    return arr;
+}
+void PrintArray(int[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        
-        int j = rnd.Next(i + 1, arr.Length);
-            (arr[j], arr[i]) = (arr[i], arr[j]);
-    }
-    for (int i = 0; i < arr.Length; i++)
-    {
-        System.Console.Write($"{arr[i]} ");
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            if (j != arr.GetLength(1) - 1) Console.Write($"{arr[i, j]}, ");
+            else if (i == arr.GetLength(0) - 1 && j == arr.GetLength(1) - 1) Console.WriteLine($"{arr[i, j]}");
+            else if (j == arr.GetLength(1) - 1) Console.WriteLine($"{arr[i, j]},");
+        }
     }
 }
-RandomArray();
+PrintArray(RandomArray());
 
 
 
