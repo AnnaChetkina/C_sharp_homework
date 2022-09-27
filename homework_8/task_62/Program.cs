@@ -43,12 +43,7 @@ int[,] FillArray(int n)
         }
         startCol++;
     }
-
-    
-        
-    return arr;
-
-    
+    return arr;   
 }
 
 void PrintArray(int[,] arr)
